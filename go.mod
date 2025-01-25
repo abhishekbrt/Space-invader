@@ -1,4 +1,4 @@
-module space-invader
+module github.com/abhishekbrt/Space-invader
 
 go 1.23.5
 
