@@ -283,8 +283,10 @@ func drawGame(assets GameAssets, ship *Spaceship, state *GameState) {
 				X: float32(WINDOW_WIDTH)/2 - 100,
 				Y: float32(WINDOW_HEIGHT) / 2,
 			}
+			score:=fmt.Sprintf("Score: %d",state.score)
 			rl.DrawText("GAME OVER", int32(textPos.X), int32(textPos.Y), 40, rl.Red)
-			rl.DrawText("Press R to Restart", int32(textPos.X), int32(textPos.Y)+50, 20, rl.White)
+			rl.DrawText(score,int32(textPos.X),int32(textPos.Y)+50,30,rl.White)
+			rl.DrawText("Press R to Restart", int32(textPos.X), int32(textPos.Y)+100, 20, rl.White)
 		}
 	}
 
